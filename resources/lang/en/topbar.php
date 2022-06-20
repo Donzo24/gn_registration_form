@@ -1,0 +1,28 @@
+<?php
+return [
+    "API SMS" => "",
+    "API/E-MAIL" => "",
+    "Administrateur" => "",
+    "Administrateurs (personnels)" => "",
+    "Cycles" => "",
+    "Enseignants" => "",
+    "Exporter" => "",
+    "Galeries d'images" => "",
+    "Horaires de cours" => "",
+    "Importer" => "",
+    "Information générale" => "",
+    "Matières" => "",
+    "Matricule" => "",
+    "Niveau pédagogique" => "",
+    "Note et moyenne" => "",
+    "Panneau de configuration" => "",
+    "Parametres" => "",
+    "Parents" => "",
+    "Présentation" => "",
+    "Retour au site public" => "",
+    "Sauvegarde de la BD" => "",
+    "Serveur mail" => "",
+    "Synchronisation" => "",
+    "Themes" => "",
+    "Établissement" => ""
+];

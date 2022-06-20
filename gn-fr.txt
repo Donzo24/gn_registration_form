@@ -1,0 +1,285 @@
+NE PAS MODIFIER CE FORMULAIRE SVP. Envoyez votre demande d'enregistrement GN
+à randy@psg.com. Les instructions détaillées sont jointes en
+annexe.
+
+- - - - - - - - - - - -  c o u p e r   i c i  - - - - - - - - - - - -
+
+      0.   FORMULAIRE GN.........: 1.21 - 97.08.15
+
+      1.   TYPE D'ENREGISTREMENT
+         * (N)ouveau (M)odifier (D)étruire..: 
+
+      2. * NOM DE DOMAINE COMPLET: 
+
+      3.   INFOS SUR L'ORGANISATION / LE DEMANDEUR
+      3a.* Nom de l'Organisation.: 
+      3b.* Adresse (rue).........: 
+      3b.* Adresse (rue).........: 
+      3c.* Ville.................: 
+      3d.* Code Postal...........: 
+      3e.* Pays..................: 
+
+      4. * DESCRIPTION DU DOMAINE: 
+
+      5.   Date Operationnel.....: 
+
+      6.   CONTACT ADMINISTRATIF
+      6a.  NIChandle (si connu)..: 
+      6b.* Nom complet...........: 
+      6c.* Nom de l'Organisation.: 
+      6d.* Adresse (rue).........: 
+      6d.  Adresse (rue).........: 
+      6e.* Ville.................: 
+      6f.* Code Postal...........: 
+      6g.* Pays..................: 
+      6h.* Telephone.............: 
+      6i.* Email.................: 
+
+      7.   CONTACT TECHNIQUE
+      7a.  NIChandle (si connu)..: 
+      7b.* Nom complet...........: 
+      7c.* Nom de l'Organisation.: 
+      7d.* Adresse (rue).........: 
+      7d.  Adresse (rue).........: 
+      7e.* Ville.................: 
+      7f.* Code Postal...........: 
+      7g.* Pays..................: 
+      7h.* Telephone.............: 
+      7i.* Email.................: 
+      7j.* Email enregistrement..: 
+      7k.  Fax...................: 
+
+REPONDEZ AUX QUESTIONS 8 ET 9 SEULEMENT POUR UNE DELEGATION (i.e
+organisation gérant une serveur de nom pour une branche de l'espace
+d'adressage du Domaine GN).
+
+      8.   SERVEUR PRIMAIRE: NOM, ADRESSE RESEAU
+      8a.* Nom du serveur........: 
+      8b.* Adresse IP............: 
+
+      9.   SERVEUR SECONDAIRE: NOM, ADRESSE RESEAU
+      9a.* Nom du serveur........: 
+      9b.* Adresse IP............: 
+
+REPONDEZ A LA QUESTION 10 POUR DES ENREGISTREMENTS DIRECTS D'HOTES IP (si
+vous avez répondu aux questions 8 et 9, ne pas répondre aux questions
+10, 11, et 12).
+
+     10.   RESOURCE RECORDS (RRs) POUR HOTES IP
+     10a.* ADRESSE IP (requis)...: 
+     10b.  HARDWARE .............: 
+     10c.  SYSTEME EXPLOITATION..: 
+     10d.* MX ...................: 
+
+Il est de votre responsabilité de vérifier qu'un pointeur IN-ADDR a
+été entré dans la base de données DNS. Contactez le gestionnaire
+du réseau IP sur lequel se trouve votre hôte pour cela.
+
+REPONDEZ AUX QUESTIONS 11 ET 12 POUR HOTES NON-IP (comme UUCP)
+
+     11.   INFORMATION SUR L'HOTE RELAIS
+     11a.* Nom du l'hote relais..: 
+     11b.* Nom Contact (req).....: 
+     11c.* Email Contact (req)...: 
+
+     12.   RESOURCE RECORDS (RRs) POUR HOTES NON-IP (UUCP)
+     12a.  NOM DE DOMAINE........: 
+     12b.  HARDWARE .............: 
+     12c.  SYSTEME EXPLOITATION..: 
+     12d.* MX (requis)...........: 
+
+- - - - - - - - - - - -  c o u p e r   i c i  - - - - - - - - - - - -
+
+                      DENI DE RESPONSABILITE
+
+En enregistrant votre nom sur l'Internet, le chargé de l'enregistrement
+(randy@psg.com), l'IANA, et la NSF (National Science Foundation) acceptent
+sur la base de la bonne foi que vous avez le droit d'utiliser ce nom.
+
+Notre rôle quant à l'enregistrement de noms sur l'Internet est
+d'assurer que le nom ne rentre en conflit avec aucun autre dans le domaine
+demandé.
+
+L'utilisateur, par votre enregistrement et l'utilisation du nom ou votre
+utilisation continue d'un nom existant, s'engage par votre demande
+d'enregistrement à ne pas entamer de poursuites contre le chargé de
+l'enregistrement, l'IANA, et la NSF (National Science Foundation), pour tous
+les coûts et charges financières qui résulteraient de litiges
+concernant les noms de marques déposés, les "trade name", les
+"services mark" et tout autre violation de loi liée aux noms, ou autres.
+
+La partie demandant l'enregistrement de ce nom certifie qu'à sa
+connaissance l'utilisation de ce nom ne viole pas les noms de marques
+déposées ou autre statut.
+
+Enregistrer un nom de domaine ne confère aucun droit légal sur ce nom
+et tout conflit sur le droit d'utiliser un nom particulier doit être
+réglé entre les parties en conflit suivant les voies légales
+habituelles de règlement (Voir RFC 1591).
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+                INSTRUCTIONS POUR LE FORMULAIRE DE DOMAINE GN
+
+
+Le formulaire Domaine GN doit être envoyé par Email au chargé de
+l'enregistrement du domaine GN (randy@psg.com) ou au contact de la zone
+déléguée.
+
+Si vous demandez la délégation d'une zone, merci de ne pas envoyer la
+demande sans avoir vérifié auparavant que les serveurs de noms de
+cette zone sont opérationnels et qu'ils délivrent les données
+correctes.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+                ENREGISTRER UN NOUVEAU NOM DE DOMAINE GN
+
+Notez que les champs signalés d'une étoile (*) sont obligatoires. Pour
+les questions de 8 à 12 vous devez remplir qu'un seul de trois groupes
+suivants : soit 8 et 9, soit 10, soit 11 et 12.
+
+1.  TYPE D'ENREGISTREMENT:  NOUVEAU, MODIFIER, ou DETRUIRE
+
+2.  NOM DE DOMAINE COMPLET.  Il s'agit du nom (Fully Qualified Domain Name)
+    qui sera utilisé dans les tables et listes associant le domaine avec
+    les adresses du serveur de domaine. Voir la structure de nommage
+    ci-dessous. Les formats suivants sont acceptés en tant que nom de
+    domaine GN.
+
+       Exemple de Nom de Domaine:  MAGNANIMOUS.ORG.GN
+
+    STRUCTURE DE NOMMAGE DU DOMAINE GN
+
+    Commercial                                         <nom>.com.gn
+
+    Ecoles proposant des diplômes de quatre ans         <nom>.edu.gn
+
+    Structures Gouvernementales                         <nom>.gov.gn
+
+    Organisations sans but lucratif                    <nom>.org.gn
+
+    Infrastructure Réseau (i.e. routeurs) seulement    <nom>.net.gn
+
+3.  INFOS SUR L'ORGANISATION / LE DEMANDEUR, (l'ORGANISATION, la LOCALITE,
+    l'ECOLE, etc. nommée).  L'entité représentée par le nom de
+    domaine complet (FQDN). Par exemple: La Société Networthy, pas le
+    nom du Fournisseur de Service réseau ou de l'Organisation qui
+    soumettent la demande au nom de la Société
+    Networthy. L'organisation doit être localisée en Guinée et
+    être l'utilisatrice réelle du domaine.
+
+4.  DECRIPTION BREVE DE L'ACTIVITE DU DOMAINE. Par exemple: La Société 
+    Networthy propose des consultations sur UNIX et le langage C dans un
+    environnement de réseau électronique.  Elle sponsorise chaque
+    année deux conférences techniques et publie une lettre
+    d'information bimensuelle.
+ 
+    Les demandes d'enregistrement doivent provenir d'organisations ayant une
+    présence réelle en Guinée et avec l'intention affichée
+    d'utiliser ce nom de domaine de manière régulière sur
+    l'Internet.  I.e. l'enregistrement de nom à des fins de [...] est
+    inapproprié.
+
+    L'organisation et le contact administratif doivent être en Guinée.
+
+5.  DATE A PARTIR DE LAQUELLE VOUS ESTIMEZ QUE LE DOMAINE SERA OPERATIONNEL.
+
+    Pour chaque enregistrement, nous avons besoin des contacts administratif
+    et technique du domaine (questions 6 & 7) et nous DEVONS avoir une
+    adresse e-mail pour chacun d'eux. Si vous avez un NIC Handle (un
+    identifier dans la base NIC) merci de l'indiquer ici (si vous ne savez
+    pas ce qu'est un NIChandle laisser le champ vide). Entrez également
+    le titre, l'adresse postale, le numéro de téléphone, le nom de
+    l'Organisation l'adresse email.
+
+6.  LE NOM DU RESPONSABLE ADMINISTRATIF DE L'ORGANISATION.  L'administrateur 
+    est le point de contact point pour les questions administratives et
+    politiques concernant le domaine.  L'administrateur du domaine collabore
+    étroitement avec la personne qui a été désignée "Point de
+    contact technique". Dans notre exemple l'administrateur du domaine
+    serait le responsable de la société Networty, et non pas le
+    responsable de l'organisation gérant le serveur de noms (à moins
+    qu'il ne s'agisse de la meme personne).
+
+    Le contact administratif doit être en Guinée et doit être
+    relever de l'organisation qui enregistre le domaine.
+
+7.  LE NOM DU CONTACT TECHNIQUE / ZONE .  Le contact technique et zone
+    gère les aspects techniques liés à la maintenance du serveur de
+    noms de domaine, du logiciel de résolution et des fichiers de bases
+    de données. Il assure le bon fonctionnement du serveur de noms. Cette
+    personne est le contact technique pour le serveur de noms
+    primaire. L'EMail Enregistrement (7j) est la boite-aux-lettres où
+    toutes les demandes liées aux noms de domaine sont envoyées et
+    traitées, pour le domaine délégué.  Les noms de ces
+    boites-aux-lettres sont souvent : hostmaster, noc, etc.
+
+
+8.  SERVEUR PRIMAIRE. S'il s'agit d'une demande de délégation de
+    domaine, le nom complet du serveur primaire et son adresse IP.
+
+9.  SERVEUR SECONDAIRE. S'il s'agit d'une demande de délégation de
+    domaine, le nom complet du serveur secondaire et son adresse IP.
+
+    Un domaine doit fournir au moins deux serveurs de noms indépendants
+    qui traduiront les noms de ses hôtes en adresses. Etablir les
+    serveurs en deux endroits géographiques différents et sur
+    différents réseaux est obligatoire. Voir RFC2182 pour la
+    justification.
+
+10. HOTE INTERNET. Si vous souhaitez donner à un seul hôte un nom de
+    domaine, cette option est appropriée.
+
+    Il est de votre responsabilité de vérifier qu'un pointeur IN-ADDR
+    a été entré dans la base DNS (pour les hôtes Internet
+    seulement).  Contactez le responsable du réseau IP sur lequel se
+    trouve votre hôte pour faire ceci.  L'administration du domain GN ne
+    peut pas gérer votre réseau et ne peut pas entrer ces valeurs dans
+    la base DNS.
+
+11. De nombreux postulants disposent d'hôtes dans le monde UUCP.
+    Certains peuvent être à un saut ("hop") de leur Relais Internet,
+    d'autres à deux ou trois. Ce qui est important est d'obtenir d'un
+    hôte Internet qu'il soit votre relais. Si vous n'avez pas encore de
+    relais Internet, plusieurs prestataires de services commerciaux pourront
+    votre proposer ce service (voir RFC 1359 - Connecting to the Internet
+    What Connecting Institutions Should Anticipate, ACM SIGUCCS, August
+    1992).
+
+    Il arrive aussi que des personnes de la votre région soient
+    déjà connectées à l'Internet et accepte de devenir votre
+    relais Internet.  Vous devrez alors vous rapprocher de l'admistrateur de
+    ces systèmes.  Nous ne pouvons pas prendre ces dispositions pour
+    vous.
+
+
+     (11a) Quel est le nom de votre hôte relais INTERNET?  Par exemple:
+           L'hôte yacht-club.co.gn utilise UUCP pour se connecter à
+           RELAY.ISI.EDU qui est un hôte Internet. (i.e., RELAY.ISI.EDU
+           est l'hôte relais).
+
+     (11b) Quel est le nom de votre personne contact sur l'hôte relais ?  
+           L'administrateur de RELAY.ISI.EDU doit accepter de devenir
+           l'hôte relais pour yacht-club.co.gn, and l'hôte relais doit
+           savoir la méthode d'acheminement à utiliser ainsi que la
+           route du Yacht Club.  Pas de double MXing.
+
+     (11c) Quel est l'Email de votre contact?
+           Quel est l'Email de l'administrateur de l'hôte relais
+
+
+12. Les valeurs et les RR (resource records) DNS à entrer pour votre
+    hôte non-IP.  Exemple :
+
+    chezmoi.or.gn      MX   10 mail.co.gn.
+		       MX  100 backup.mail.co.gn.
+
+
+LE TRAITEMENT DE CETTE DEMANDE DEMANDE UN MINIMUM DE 10 JOURS OUVRABLES.
+Gardez en mémoire qu'il s'agit d'un service volontaire et que les
+chargés d'enregistrement et ingénieurs des serveurs de noms ont aussi
+une vie privée.
+
+- - - - - - - - - - - -  c o u p e r   i c i  - - - - - - - - - - - -
+

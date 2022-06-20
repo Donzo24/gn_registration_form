@@ -1,0 +1,27 @@
+<?php
+return [
+    "Actualités" => "",
+    "Années scolaires" => "",
+    "Classes" => "",
+    "Compositions" => "",
+    "Comptabilites" => "",
+    "Déconnexion" => "",
+    "EMAIL" => "",
+    "Emplois" => "",
+    "Etat comptable" => "",
+    "Inscription" => "",
+    "Liste" => "",
+    "Messagerie" => "",
+    "Mon compte" => "",
+    "Mon emploi" => "",
+    "Paiements" => "",
+    "Parametres" => "",
+    "Prise de photos" => "",
+    "Recherche" => "",
+    "SMS" => "",
+    "Tableau de bord" => "",
+    "Type de paiement" => "",
+    "Verrouiller" => "",
+    "Élèves" => "",
+    "Évaluations" => ""
+];
