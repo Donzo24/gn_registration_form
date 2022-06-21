@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>{{ __("Registration form CTLD Guinea") }}</title>
+        <title>{{ __("Enregistrement de domaine en Guinée (GN)") }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
@@ -45,13 +45,13 @@
 
                                 <h2 class="text-center mb-3">{{ __("Enregistrement de domaine en Guinée (GN)") }}</h2>
 
-                                <div class="row">
+                                <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 1. {{ __("TYPE D'ENREGISTREMENT") }}*:
                                             </label>
-                                            <select name="type" class="form-control" placeholder="Enter your email">
+                                            <select name="type" class="form-control" >
                                                 <option value="N">{{ __("Nouveau") }}</option>
                                                 <option value="M">{{ __("Modifier") }}</option>
                                                 <option value="D">{{ __("Détruire") }}</option>
@@ -60,10 +60,10 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label class="form-label">
                                                 2. {{ __("NOM DE DOMAINE COMPLET") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text">
                                         </div>
                                     </div>
                                 </div>
@@ -72,61 +72,61 @@
                                 <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 3a. {{ __("Nom de l'Organisation") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 3b. {{ __("Adresse (rue) 1") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 3b. {{ __("Adresse (rue) 2") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 3c. {{ __("Ville") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 3d. {{ __("Code Postal") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 3e. {{ __("Pays") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row mb-2">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 4. {{ __("DESCRIPTION DU DOMAINE") }}*:
                                             </label>
                                             <textarea name="description" class="form-control" cols="30" rows="5"></textarea>
@@ -137,7 +137,7 @@
                                 <div class="row mb-2">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 5. {{ __("Date Operationnel") }}*:
                                             </label>
                                             <input type="date" id="date" name="date" class="form-control">
@@ -149,18 +149,18 @@
                                 <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 6a. {{ __("NIChandle (si connu)") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 6b. {{ __("Nom complet") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                 </div>
@@ -168,18 +168,18 @@
                                 <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 6c. {{ __("Nom de l'Organisation)") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 6d. {{ __("Adresse (rue)") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                 </div>
@@ -187,18 +187,18 @@
                                 <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 6d. {{ __("Adresse (rue)") }}:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 6e. {{ __("Ville") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                 </div>
@@ -206,18 +206,18 @@
                                 <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 6f. {{ __("Code Postal") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 6g. {{ __("Pays") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                 </div>
@@ -225,10 +225,10 @@
                                 <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 6h. {{ __("Email") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
 
@@ -238,18 +238,18 @@
                                 <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 7a. {{ __("NIChandle (si connu)") }}:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 7b. {{ __("Nom complet") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                 </div>
@@ -257,18 +257,18 @@
                                 <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 7c. {{ __("Nom de l'Organisation)") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 7d. {{ __("Adresse (rue)") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                 </div>
@@ -276,18 +276,18 @@
                                 <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 7d. {{ __("Adresse (rue)") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 7e. {{ __("Ville") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                 </div>
@@ -295,18 +295,18 @@
                                 <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 7f. {{ __("Code Postal") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 7g. {{ __("Pays") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                 </div>
@@ -314,16 +314,16 @@
                                 <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 7h. {{ __("Telephone") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 7i. {{ __("Email") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
 
@@ -332,18 +332,18 @@
                                 <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 7j. {{ __("Email enregistrement") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 7k. {{ __("Fax") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                 </div>
@@ -356,18 +356,18 @@
                                 <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 8a. {{ __("Nom du serveur") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 8b. {{ __("Adresse IP") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                 </div>
@@ -376,18 +376,18 @@
                                 <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 9a. {{ __("Nom du serveur") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 9b. {{ __("Adresse IP") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                 </div>
@@ -401,18 +401,18 @@
                                 <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 10a. {{ __("ADRESSE IP (requis)") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                10b. {{ __("HARDWARE") }}:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                 </div>
@@ -420,18 +420,18 @@
                                 <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 10c. {{ __("SYSTEME EXPLOITATION") }}:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 10d. {{ __("MX") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                 </div>
@@ -447,26 +447,26 @@
                                 <div class="row mb-2">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 11a. {{ __("Nom du l'hote relais") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 11b. {{ __("Nom Contact (req)") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 11c. {{ __("Email Contact (req)") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                 </div>
@@ -475,18 +475,18 @@
                                 <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 11a. {{ __("NOM DE DOMAINE") }}:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 12b. {{ __("HARDWARE") }}:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
 
@@ -495,20 +495,51 @@
                                 <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 12c. {{ __("SYSTEME EXPLOITATION") }}:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="emailaddress" class="form-label">
+                                            <label  class="form-label">
                                                 12d. {{ __("MX (requis)") }}*:
                                             </label>
-                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                            <input class="form-control" type="text"   >
                                         </div>
                                     </div>
+                                </div>
+
+                                <h4 class="text-center">{{ __("DENI DE RESPONSABILITE") }}</h4>
+
+                                <p>{{ __("En enregistrant votre nom sur l'Internet, le chargé de l'enregistrement
+                                    (randy@psg.com), l'IANA, et la NSF (National Science Foundation) acceptent
+                                    sur la base de la bonne foi que vous avez le droit d'utiliser ce nom.") }}</p>
+
+                                <p>{{ __("Notre rôle quant à l'enregistrement de noms sur l'Internet est
+                                    d'assurer que le nom ne rentre en conflit avec aucun autre dans le domaine
+                                    demandé.") }}</p>
+
+                                <p>{{ __("L'utilisateur, par votre enregistrement et l'utilisation du nom ou votre
+                                    utilisation continue d'un nom existant, s'engage par votre demande
+                                    d'enregistrement à ne pas entamer de poursuites contre le chargé de
+                                    l'enregistrement, l'IANA, et la NSF (National Science Foundation), pour tous
+                                    les coûts et charges financières qui résulteraient de litiges
+                                    concernant les noms de marques déposés, les \"trade name\", les
+                                    \"services mark\" et tout autre violation de loi liée aux noms, ou autres.") }}</p>
+
+                                <p>{{ __("La partie demandant l'enregistrement de ce nom certifie qu'à sa
+                                    connaissance l'utilisation de ce nom ne viole pas les noms de marques
+                                    déposées ou autre statut.") }}</p>
+
+                                <p>{{ __("Enregistrer un nom de domaine ne confère aucun droit légal sur ce nom
+                                    et tout conflit sur le droit d'utiliser un nom particulier doit être
+                                    réglé entre les parties en conflit suivant les voies légales
+                                    habituelles de règlement (Voir RFC 1591).") }}</p>
+
+                                <div class="text-center d-grid">
+                                    <button class="btn btn-success" type="submit"> {{ __("Soumettre") }} </button>
                                 </div>
 
                             </div> <!-- end card-body -->
@@ -524,7 +555,7 @@
         <!-- end page -->
 
         <footer class="footer footer-alt">
-            2022 - <script>document.write(new Date().getFullYear())</script> &copy; {{ __("Registration in the Guinea country domain, GN") }} <a href="" class="text-white-50">Youssouf DONZO</a>
+            2022 - <script>document.write(new Date().getFullYear())</script> &copy; <span class="text-white">{{ __("Enregistrement de domaine en Guinée (GN)") }}</span> <a href="" class="text-white">by Youssouf DONZO</a>
         </footer>
 
         <!-- Vendor js -->
