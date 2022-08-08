@@ -47,8 +47,10 @@
 
                                     <h2 class="text-center mb-3">{{ __("Enregistrement de domaine en Guinée (GN)") }}</h2>
                                     <p class="text-center">
-                                        {{ __("Le formulaire est egalement disponible en") }}
-                                        <a href="/form/{{ config('app.locale') == 'fr' ? 'en':'fr' }}">Francais</a>
+                                        {{ __("Le formulaire est également disponible en") }}
+                                        <a href="/form/{{ config('app.locale') == 'fr' ? 'en':'fr' }}">
+                                            {{ config('app.locale') == 'fr' ? "Anglais":"French" }}
+                                        </a>
                                     </p>
 
                                     <div class="row mb-2">
