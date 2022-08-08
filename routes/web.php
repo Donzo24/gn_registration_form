@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::get('form/{lang}', function($lang) {
+    Session::put('locale', $lang);
+    return redirect()->back();
+});
+
+Route::group(['middleware' => ['local']], function() {
+    Route::get('/', function () {
+        return view('index');
+    });
+
+    Route::post('/send', "App\Http\Controllers\SendRequestController@save");
 });
