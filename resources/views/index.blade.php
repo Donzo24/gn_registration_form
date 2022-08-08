@@ -117,7 +117,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label  class="form-label">
-                                                    3d. {{ __("Code Postal") }}*:
+                                                    3d. {{ __("Code Postal") }}:
                                                 </label>
                                                 <input class="form-control" type="text" name="code_postal">
                                             </div>
@@ -215,7 +215,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label  class="form-label">
-                                                    6f. {{ __("Code Postal") }}*:
+                                                    6f. {{ __("Code Postal") }}:
                                                 </label>
                                                 <input class="form-control" type="text" name="code_postal_admin">
                                             </div>
@@ -304,7 +304,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label  class="form-label">
-                                                    7f. {{ __("Code Postal") }}*:
+                                                    7f. {{ __("Code Postal") }}:
                                                 </label>
                                                 <input class="form-control" type="text" name="code_postal_tech">
                                             </div>
