@@ -53,13 +53,23 @@
                                         </a>
                                     </p>
 
+                                    @if (\Session::has('msg'))
+                                        <h5 class="alert alert-danger mt-0">{{ Session::get('msg') }}</h5>
+                                    @endif
+                                    @if (\Session::has('info'))
+                                        <h5 class="alert alert-info">{{ Session::get('info') }}</h5>
+                                    @endif
+                                    @if ($errors->any())
+                                        <h5 class="alert alert-danger">{{ $errors->first() }}</h5>
+                                    @endif
+
                                     <div class="row mb-2">
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label  class="form-label">
                                                     1. {{ __("TYPE D'ENREGISTREMENT") }}*:
                                                 </label>
-                                                <select name="type" class="form-control" >
+                                                <select name="TYPE" class="form-control" >
                                                     <option value="N">{{ __("Nouveau") }}</option>
                                                     <option value="M">{{ __("Modifier") }}</option>
                                                     <option value="D">{{ __("Détruire") }}</option>
@@ -71,7 +81,7 @@
                                                 <label class="form-label">
                                                     2. {{ __("NOM DE DOMAINE COMPLET") }}*:
                                                 </label>
-                                                <input class="form-control" name="nom_complet" type="text">
+                                                <input class="form-control" name="FULLY_QUALIFIED_DOMAIN_NAME" value="{{ old("FULLY_QUALIFIED_DOMAIN_NAME") }}" type="text">
                                             </div>
                                         </div>
                                     </div>
@@ -83,7 +93,7 @@
                                                 <label  class="form-label">
                                                     3a. {{ __("Nom de l'Organisation") }}*:
                                                 </label>
-                                                <input class="form-control" type="text"  name="nom_organisation" >
+                                                <input class="form-control" type="text"  name="ORGANIZATION_NAME" value="{{ old("ORGANIZATION_NAME") }}">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -91,7 +101,7 @@
                                                 <label  class="form-label">
                                                     3b. {{ __("Adresse (rue) 1") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="adresse_ru_1">
+                                                <input class="form-control" type="text" name="ADDRESS_LINE_1" value="{{ old('ADDRESS_LINE_1') }}">
                                             </div>
                                         </div>
                                     </div>
@@ -101,7 +111,7 @@
                                                 <label  class="form-label">
                                                     3b. {{ __("Adresse (rue) 2") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="adresse_ru_2">
+                                                <input class="form-control" type="text" name="ADDRESS_LINE_2" value="{{ old('ADDRESS_LINE_2') }}">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -109,7 +119,7 @@
                                                 <label  class="form-label">
                                                     3c. {{ __("Ville") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="ville">
+                                                <input class="form-control" type="text" name="CITY_NAME" value="{{ old('CITY_NAME') }}">
                                             </div>
                                         </div>
                                     </div>
@@ -119,7 +129,7 @@
                                                 <label  class="form-label">
                                                     3d. {{ __("Code Postal") }}:
                                                 </label>
-                                                <input class="form-control" type="text" name="code_postal">
+                                                <input class="form-control" type="text" name="POSTAL_CODE" value="{{ old('POSTAL_CODE') }}">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -127,7 +137,7 @@
                                                 <label  class="form-label">
                                                     3e. {{ __("Pays") }}*:
                                                 </label>
-                                                <input class="form-control" type="text"  name="pays">
+                                                <input class="form-control" type="text"  name="COUNTRY_NAME" value="{{ old("COUNTRY_NAME") }}">
                                             </div>
                                         </div>
                                     </div>
@@ -148,7 +158,7 @@
                                                 <label  class="form-label">
                                                     5. {{ __("Date Operationnel") }}*:
                                                 </label>
-                                                <input type="date" id="date" name="date_operationnel" class="form-control">
+                                                <input type="date" id="date" name="DATE_OPERATION" class="form-control" value="{{ old("DATE_OPERATION") }}">
                                             </div>
                                         </div>
                                     </div>
@@ -160,7 +170,7 @@
                                                 <label  class="form-label">
                                                     6a. {{ __("NIChandle (si connu)") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="nic_handle">
+                                                <input class="form-control" type="text" name="CONTACT_NIC_HANDLE" value="{{ old('CONTACT_NIC_HANDLE') }}">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -168,7 +178,7 @@
                                                 <label  class="form-label">
                                                     6b. {{ __("Nom complet") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="nom_complet_admin">
+                                                <input class="form-control" type="text" name="CONTACT_WHOLE_NAME" value="{{ old("CONTACT_WHOLE_NAME") }}">
                                             </div>
                                         </div>
                                     </div>
@@ -179,7 +189,7 @@
                                                 <label  class="form-label">
                                                     6c. {{ __("Nom de l'Organisation)") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="nom_organisation_admin">
+                                                <input class="form-control" type="text" name="CONTACT_ORGANIZATION_NAME" value="{{ old("CONTACT_ORGANIZATION_NAME") }}">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -187,7 +197,7 @@
                                                 <label  class="form-label">
                                                     6d. {{ __("Adresse (rue)") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="adresse_ru_1_admin">
+                                                <input class="form-control" type="text" name="CONTACT_ADDRESS_LINE_1" value="{{ old("CONTACT_ADDRESS_LINE_1") }}">
                                             </div>
                                         </div>
                                     </div>
@@ -198,7 +208,7 @@
                                                 <label  class="form-label">
                                                     6d. {{ __("Adresse (rue)") }}:
                                                 </label>
-                                                <input class="form-control" type="text" name="adresse_ru_2_admin">
+                                                <input class="form-control" type="text" name="CONTACT_ADDRESS_LINE_2" value="{{ old("CONTACT_ADDRESS_LINE_2") }}">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -206,7 +216,7 @@
                                                 <label  class="form-label">
                                                     6e. {{ __("Ville") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="ville_admin">
+                                                <input class="form-control" type="text" name="CONTACT_CITY_NAME" value="{{ old('CONTACT_CITY_NAME') }}">
                                             </div>
                                         </div>
                                     </div>
@@ -217,7 +227,7 @@
                                                 <label  class="form-label">
                                                     6f. {{ __("Code Postal") }}:
                                                 </label>
-                                                <input class="form-control" type="text" name="code_postal_admin">
+                                                <input class="form-control" type="text" name="CONTACT_POSTAL_CODE" value="{{ old("CONTACT_POSTAL_CODE") }}">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -225,7 +235,7 @@
                                                 <label  class="form-label">
                                                     6g. {{ __("Pays") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="pays_admin">
+                                                <input class="form-control" type="text" name="CONTACT_COUNTRY_NAME" value="{{ old("CONTACT_COUNTRY_NAME") }}">
                                             </div>
                                         </div>
                                     </div>
@@ -236,7 +246,7 @@
                                                 <label  class="form-label">
                                                     6h. {{ __("Email") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="email_admin">
+                                                <input class="form-control" type="text" name="CONTACT_EMAIL" value="{{ old("CONTACT_EMAIL") }}">
                                             </div>
                                         </div>
 
@@ -249,7 +259,7 @@
                                                 <label  class="form-label">
                                                     7a. {{ __("NIChandle (si connu)") }}:
                                                 </label>
-                                                <input class="form-control" type="text" name="nic_handle_tech">
+                                                <input class="form-control" type="text" name="TECHNICAL_NIC_HANDLE" value="{{ old("TECHNICAL_NIC_HANDLE") }}">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -257,7 +267,7 @@
                                                 <label  class="form-label">
                                                     7b. {{ __("Nom complet") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="nom_complet_tech">
+                                                <input class="form-control" type="text" name="TECHNICAL_WHOLE_NAME" value="{{ old("TECHNICAL_WHOLE_NAME") }}">
                                             </div>
                                         </div>
                                     </div>
@@ -268,7 +278,7 @@
                                                 <label  class="form-label">
                                                     7c. {{ __("Nom de l'Organisation)") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="nom_organisation_tech">
+                                                <input class="form-control" type="text" name="TECHNICAL_ORGANIZATION_NAME" value="{{ old("TECHNICAL_ORGANIZATION_NAME") }}">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -276,7 +286,7 @@
                                                 <label  class="form-label">
                                                     7d. {{ __("Adresse (rue)") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="adresse_rue_1_tech">
+                                                <input class="form-control" type="text" name="TECHNICAL_ADDRESS_LINE_1" value="{{ old("TECHNICAL_ADDRESS_LINE_1") }}">
                                             </div>
                                         </div>
                                     </div>
@@ -287,7 +297,7 @@
                                                 <label  class="form-label">
                                                     7d. {{ __("Adresse (rue)") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="adresse_rue_2_tech">
+                                                <input class="form-control" type="text" name="TECHNICAL_ADDRESS_LINE_2" value="{{ old("TECHNICAL_ADDRESS_LINE_2") }}">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -295,7 +305,7 @@
                                                 <label  class="form-label">
                                                     7e. {{ __("Ville") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="ville_tech">
+                                                <input class="form-control" type="text" name="TECHNICAL_CITY_NAME" value="{{ old("TECHNICAL_CITY_NAME") }}">
                                             </div>
                                         </div>
                                     </div>
@@ -306,7 +316,7 @@
                                                 <label  class="form-label">
                                                     7f. {{ __("Code Postal") }}:
                                                 </label>
-                                                <input class="form-control" type="text" name="code_postal_tech">
+                                                <input class="form-control" type="text" name="TECHNICAL_POSTAL_CODE" value="{{ old("TECHNICAL_POSTAL_CODE") }}">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -314,7 +324,7 @@
                                                 <label  class="form-label">
                                                     7g. {{ __("Pays") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="pays_tech">
+                                                <input class="form-control" type="text" name="TECHNICAL_COUNTRY_NAME" value="{{ old("TECHNICAL_COUNTRY_NAME") }}">
                                             </div>
                                         </div>
                                     </div>
@@ -325,13 +335,13 @@
                                                 <label  class="form-label">
                                                     7h. {{ __("Telephone") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="telephone_tech">
+                                                <input class="form-control" type="text" name="TECHNICAL_PHONE" value="{{ old("TECHNICAL_PHONE") }}">
                                             </div>
                                             <div class="form-group">
                                                 <label  class="form-label">
                                                     7i. {{ __("Email") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="email_tech">
+                                                <input class="form-control" type="text" name="TECHNICAL_EMAIL" value="{{ old("TECHNICAL_EMAIL") }}">
                                             </div>
                                         </div>
 
@@ -343,7 +353,7 @@
                                                 <label  class="form-label">
                                                     7j. {{ __("Email enregistrement") }}*:
                                                 </label>
-                                                <input class="form-control" type="text"  name="email_enregistrement_tech">
+                                                <input class="form-control" type="text"  name="TECHNICAL_REGISTRATION_MAIL" value="{{ old("TECHNICAL_REGISTRATION_MAIL") }}">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -351,7 +361,7 @@
                                                 <label  class="form-label">
                                                     7k. {{ __("Fax") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="fax_tech">
+                                                <input class="form-control" type="text" name="TECHNICAL_FAX_NUM" value="{{ old("TECHNICAL_FAX_NUM") }}">
                                             </div>
                                         </div>
                                     </div>
@@ -367,7 +377,7 @@
                                                 <label  class="form-label">
                                                     8a. {{ __("Nom du serveur") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="nom_serveur_primaire">
+                                                <input class="form-control" type="text" name="PRIMARY_SERVER_HOSTNAME" value="{{ old("PRIMARY_SERVER_HOSTNAME") }}">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -375,7 +385,7 @@
                                                 <label  class="form-label">
                                                     8b. {{ __("Adresse IP") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="adresse_ip_primaire">
+                                                <input class="form-control" type="text" name="PRIMARY_SERVER_IP" value="{{ old("PRIMARY_SERVER_IP") }}">
                                             </div>
                                         </div>
                                     </div>
@@ -387,7 +397,7 @@
                                                 <label  class="form-label">
                                                     9a. {{ __("Nom du serveur") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="nom_serveur_secondaire">
+                                                <input class="form-control" type="text" name="SECONDARY_SERVER_HOSTNAME" value="{{ old("SECONDARY_SERVER_HOSTNAME") }}">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -395,7 +405,7 @@
                                                 <label  class="form-label">
                                                     9b. {{ __("Adresse IP") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="adresse_ip_serveur_secondaire">
+                                                <input class="form-control" type="text" name="SECONDARY_SERVER_IP" value="{{ old("SECONDARY_SERVER_IP") }}">
                                             </div>
                                         </div>
                                     </div>
@@ -412,7 +422,7 @@
                                                 <label  class="form-label">
                                                     10a. {{ __("ADRESSE IP (requis)") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="adresse_ip_recccords">
+                                                <input class="form-control" type="text" name="RESOURCE_IP_RECORDS_IP" value="{{ old("RESOURCE_IP_RECORDS_IP") }}">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -420,7 +430,7 @@
                                                 <label  class="form-label">
                                                 10b. {{ __("HARDWARE") }}:
                                                 </label>
-                                                <input class="form-control" type="text" name="hardware">
+                                                <input class="form-control" type="text" name="RESOURCE_IP_RECORDS_HARDWARE" value="{{ old("RESOURCE_IP_RECORDS_HARDWARE") }}">
                                             </div>
                                         </div>
                                     </div>
@@ -431,7 +441,7 @@
                                                 <label  class="form-label">
                                                     10c. {{ __("SYSTEME EXPLOITATION") }}:
                                                 </label>
-                                                <input class="form-control" type="text" name="os">
+                                                <input class="form-control" type="text" name="RESOURCE_IP_RECORDS_OS" value="{{ old("RESOURCE_IP_RECORDS_OS") }}">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -439,7 +449,7 @@
                                                 <label  class="form-label">
                                                     10d. {{ __("MX") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="mx">
+                                                <input class="form-control" type="text" name="RESOURCE_IP_RECORDS_MX" value="{{ old("RESOURCE_IP_RECORDS_MX") }}">
                                             </div>
                                         </div>
                                     </div>
@@ -458,7 +468,7 @@
                                                 <label  class="form-label">
                                                     11a. {{ __("Nom du l'hote relais") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="nom_hote">
+                                                <input class="form-control" type="text" name="FORWARDING_HOST" value="{{ old("FORWARDING_HOST") }}">
                                             </div>
                                         </div>
                                         <div class="col-md-4">
@@ -466,7 +476,7 @@
                                                 <label  class="form-label">
                                                     11b. {{ __("Nom Contact (req)") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="contact_hote">
+                                                <input class="form-control" type="text" name="FORWARDING_CONTACT_NAME" value="{{ old("FORWARDING_CONTACT_NAME") }}">
                                             </div>
                                         </div>
                                         <div class="col-md-4">
@@ -474,7 +484,7 @@
                                                 <label  class="form-label">
                                                     11c. {{ __("Email Contact (req)") }}*:
                                                 </label>
-                                                <input class="form-control" type="text" name="email_hote">
+                                                <input class="form-control" type="text" name="FORWARDING_CONTACT_EMAIL" value="{{ old("FORWARDING_CONTACT_EMAIL") }}">
                                             </div>
                                         </div>
                                     </div>
@@ -486,7 +496,7 @@
                                                 <label  class="form-label">
                                                     11a. {{ __("NOM DE DOMAINE") }}:
                                                 </label>
-                                                <input class="form-control" type="text" name="nom_domaine_reccords">
+                                                <input class="form-control" type="text" name="RESOURCE_RECORDS_DOMAINE_NAME" value="{{ old("RESOURCE_RECORDS_DOMAINE_NAME") }}">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -494,7 +504,7 @@
                                                 <label  class="form-label">
                                                     12b. {{ __("HARDWARE") }}:
                                                 </label>
-                                                <input class="form-control" type="text" name="hardware_domaine_reccords">
+                                                <input class="form-control" type="text" name="RESOURCE_RECORDS_HARDWARE" value="{{ old("RESOURCE_RECORDS_HARDWARE") }}">
                                             </div>
                                         </div>
 
@@ -506,7 +516,7 @@
                                                 <label  class="form-label">
                                                     12c. {{ __("SYSTEME EXPLOITATION") }}:
                                                 </label>
-                                                <input class="form-control" type="text" name="os_domaine_reccords">
+                                                <input class="form-control" type="text" name="RESOURCE_RECORDS_OS" value="{{ old("RESOURCE_RECORDS_OS") }}">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -514,7 +524,7 @@
                                                 <label  class="form-label">
                                                     12d. {{ __("MX (requis)") }}*:
                                                 </label>
-                                                <input class="form-control" type="text"  name="mx_domaine_reccords">
+                                                <input class="form-control" type="text"  name="RESOURCE_RECORDS_MX" value="{{ old("RESOURCE_RECORDS_MX") }}">
                                             </div>
                                         </div>
                                     </div>

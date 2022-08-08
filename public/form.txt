@@ -1,0 +1,267 @@
+PLEASE DO NOT ALTER THIS APPLICATION IN ANY WAY.  Send your GN registration
+to randy@psg.com.  See attached detailed instructions.
+
+- - - - - - - - - - - - - -   c u t   h e r e   - - - - - - - - - - - - - -
+
+      0.   GN DOMAIN TEMPLATE....: 2.31  2004.11.03
+
+      1.   REGISTRATION TYPE
+         * (N)ew (M)odify (D)elete..: N
+
+      2. * FULLY-QUALIFIED DOMAIN NAME: www.bembeya.org
+
+      3.   ORGANIZATION INFORMATION
+      3a.* Organization Name.....: Evil Technologies
+      3b.* Address Line 1........: Rue 40
+      3b.* Address Line 2........: Yimbaya
+      3c.* City..................: Conakry
+      3d.* Postal Code...........: 56436
+      3e.* Country...............: Guinée
+
+      4. * DESCRIPTION OF ORG/DOMAIN:
+
+      5.   Date Operational......: 2022-08-22
+
+      6.   ADMINISTRATIVE CONTACT OF ORG/DOMAIN
+      6a.  NIChandle (if known)..: 222222
+      6b.* Whole Name............: Youssouf Donzo
+      6c.* Organization Name.....: Evil Technologies
+      6d.* Address Line 1........: Rue 40
+      6d.  Address Line 2........: Yimbaya
+      6e.* City..................: Conakry
+      6f.* Postal Code...........: 56436
+      6g.* Country...............: Guinée
+      6h.* Voice Phone...........: __CONTACT_PHONE
+      6i.* Electronic Mailbox....: donzoyoussouf@gmail.com
+
+      7.   TECHNICAL AND ZONE CONTACT
+      7a.  NIChandle (if known)..: 2233333333
+      7b.* Whole Name............: Youssouf Donzo
+      7c.* Organization Name.....: Evil Technologies
+      7d.* Address Line 1........: Matoto
+      7d.  Address Line 2........: Yimbaya
+      7e.* City..................: Conakry
+      7f.* Postal Code...........: 56436
+      7g.* Country...............: Guinée
+      7h.* Voice Phone...........: +224627044179
+      7i.* Electronic Mailbox....: donzoyoussouf@gmail.com
+      7j.* Registration Mailbox..: donzoyoussouf@gmail.com
+      7k.  Fax Number............: 44444223
+
+FILL OUT QUESTION 8 AND 9 FOR DELEGATIONS ONLY (i.e those organizations
+running nameservers for a branch of the GN Domain namespace,
+
+      8.   PRIMARY SERVER: HOSTNAME, NETADDRESS
+      8a.* Hostname..............: sssssssss
+      8b.* IP Address............: Matoto
+
+      9.   SECONDARY SERVER: HOSTNAME, NETADDRESS
+      9a.* Hostname..............: bembeya.org
+      9b.* IP Address............: Matoto
+
+FILL OUT QUESTION 10 FOR DIRECT REGISTRATIONS IP HOSTS (if you answered 8 &
+9, do not answer 10, 11, and 12)
+
+     10.   RESOURCE RECORDS (RRs) FOR IP INTERNET HOSTS
+     10a.* IP ADDRESS (required).: Yimbaya
+     10b.  HARDWARE .............: INTEL
+     10c.  OPERATING SYS ........: DEBIAN
+     10d.* MX ...................: 10
+
+It is your responsibility to see that an IN-ADDR pointer record is entered
+in the DNS database.  Contact the administrator of the IP network your host
+is on to have this done.
+
+FILL OUT QUESTIONS 11 AND 12 FOR NON-IP HOSTS (such as UUCP)
+
+     11.   FORWARDING HOST INFORMATION
+     11a.* Forwarding Host.......: bembeya.org
+     11b.* Contact Name (req)....: Youssouf Donzo
+     11c.* Contact Email (req)...: donzoyoussouf@gmail.com
+
+     12.   RESOURCE RECORDS (RRs) FOR NON-IP HOSTS (UUCP)
+     12a.  DOMAIN NAME ..........: bembeya.gn
+     12b.  HARDWARE .............: AMD
+     12c.  OPERATING SYS ........: LINUX
+     12d.* MX (required).........: 32
+
+- - - - - - - - - - - - - -   c u t   h e r e   - - - - - - - - - - - - - -
+
+                           DISCLAIMER
+
+By the registration of your name on the Internet, the registrar
+(randy@psg.com), the IANA, the and the National Science Foundation are
+accepting in good faith that you have the right to the use the name.
+
+Our function in registering names on the Internet is to assure that the name
+does not conflict with any other name in the name space requested.
+
+The user by your registration and use of the name and/or your continued use
+of an existing name, agrees, as part of your request for name registration,
+to indemnify and hold harmless from any and all costs, fees, expenses
+arising from litigation involving trademark, trade name, service mark, and
+any other name infringements, or other reasons, the registrar, the IANA, and
+the National Science Foundation.
+
+The party requesting registration of this name certifies that to her/his
+knowledge, the use of this name does not violate trademark or other
+statutes.
+
+Registering a domain name does not confer any legal rights to that name and
+any disputes between parties over the rights to use a particular name are to
+be settled between the contending parties using normal legal methods (See
+RFC 1591).
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+                INSTRUCTIONS FOR THE GN DOMAIN TEMPLATE
+
+
+The GN Domain Template must be sent by email to the GN Domain Registrar
+(randy@psg.com) or the contact of a delegated zone.
+
+If you are requesting delegation of a zone, do not send in the application
+until you have verified that the nameservers for that zone are fully
+functional and serving correct data.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+                REGISTERING A NEW GN DOMAIN NAME
+
+Note that all starred (*) fields are mandatory, except please fill out only
+one of 8-9, 10, or 11-12.
+
+1.  REGISTRATION TYPE:  NEW, MODIFICATION, or DELETION
+
+2.  THE NAME OF THE DOMAIN.  This is the name that will be used in
+    tables and lists associating the domain with the domain server
+    addresses.  See Naming Structure Table below.  The following
+    formats are accepted as a GN Domain name.
+
+       Domain Name Example:  MAGNANIMOUS.ORG.GN
+
+    GN DOMAIN NAMING STRUCTURE
+
+    Commercial                                   <name>.com.gn
+
+    Schools granting baccalaureate degrees       <name>.edu.gn
+
+    Governmental entities                        <name>.gov.gn
+
+    Not for profit organizations                 <name>.org.gn
+
+    Network infrastructure (i.e.routers) only    <name>.net.gn
+
+3.  THE NAME OF THE ENTITY REPRESENTED, (i.e., ORGANIZATION, LOCALITY,
+    SCHOOL, etc., being named.  The name that describes the Fully Qualified
+    Domain Namee.  For example: The Networthy Corporation, not the name of
+    the Network Service Provider or organization submitting the request.
+    The organization must be in Guinea and be the end user of the domain.
+
+4.  PLEASE DESCRIBE THE DOMAIN BRIEFLY. For example: The Networthy
+    Corporation is a consulting organization of people working with UNIX and
+    the C language in an electronic networking environment.  It sponsors two
+    technical conferences annually and distributes a bimonthly newsletter.
+
+    Registrations must be from organizations with a real presence in Guinea
+    and with a demonstrable intent to use the domain name on a regular basis
+    on the internet.  I.e. brand, vanity, placemark, trademark, service mark,
+    etc. name registration is not appropriate.  I.e., one registration per
+    organization.
+
+    The Organization and the Adminintrative contact must be in Guinea.
+
+5.  THE DATE YOU EXPECT THE DOMAIN TO BE FULLY OPERATIONAL.
+
+    For every registration, we need both the administrative and the
+    technical contacts of a domain (questions 6 & 7) and we MUST have a
+    network mailbox for each.  If you have a NIC handle (a unique NIC
+    database identifier) please enter it.  (If you don't know what a NIC
+    handle is leave it blank).  Also the title, mailing address, phone
+    number, organization, and network mailbox.
+
+6.  THE NAME OF THE ADMINISTRATIVE HEAD OF THE "ORGANIZATION".  The
+    administrator is the contact point for administrative and policy
+    questions about the domain.  The Domain administrator should work
+    closely with the personnel they have designated as the "technical
+    contact" for the domain. In this example the Domain Administraror would
+    be the Administrator of the Networty Corporation, not the Administrator
+    of the organization running the nameserver (unless it is the same
+    person).
+
+    The Administrative contact must be in Guinea and must be within the
+    organization which is registering the domain.
+
+7.  THE NAME OF THE TECHNICAL AND ZONE CONTACT.  The technical and zone
+    contact handles the technical aspects of maintaining the domain's name
+    server and resolver software, and database files.  They keep the name
+    server running.  This person would be the technical contact running the
+    primary nameserver.  The REGISTRATION REQUEST MAILBOX (7j) is where
+    domain name requests are mailed and processed for the delegated domain.
+    Mailboxes names would be like: hostmaster, noc, etc).
+
+8.  PRIMARY SERVER. If this is a request to delegate the domain name, the
+    complete host name of the primary server as well as the IP address.
+
+9.  SECONDARY SERVER.  If this is a request to delegate the domain name, the
+    complete host name of the secondary server as well as the IP address.
+
+    Domains must provide at least two independent servers that provide the
+    domain service for translating names to addresses for hosts in this
+    domain.  Establishing the servers in physically separate locations and
+    on different PSNs and/or networks is required.  See RFC2182 for the
+    rationale.
+
+    This means that the secondary server MUST be in a physical location
+    quite separate from the primary, and that the two MUST be on completely
+    separate international backbone providers.
+
+    If you wish to have more than one secondary server, merely duplicate
+    section 9.
+
+10. INTERNET HOST.  If you just wish to give a single host a domain name,
+    then this option may be appropriate.
+
+    It is your responsibility to see that an IN-ADDR pointer record is
+    entered in the DNS database.  (For internet hosts only).  Contact the
+    administrator of the IP network your host is on to have this done.  The
+    GN Domain administration does not administer the network and cannot make
+    these entries in the DNS database.
+
+11. Many applicants have hosts in the UUCP world.  Some are one hop away,
+    some two and three hops away from their "Internet Forwarder", this is
+    acceptable.  What is important is getting an Internet host to be your
+    forwarder.  If you do not already have an Internet forwarder, there are
+    several businesses that provide this service for a fee, (see RFC 1359 -
+    Connecting to the Internet What Connecting Institutions Should
+    Anticipate, ACM SIGUCCS, August 1992). Sometimes local colleges in your
+    area are already on the Internet and may be willing to act as an
+    Internet Forwarder. You would need to work this out with the systems
+    administrator.  We cannot make these arrangements for you.
+
+     (11a) What is the name of your Internet forwarding host?  For example:
+           The host yacht-club.com.gn uses UUCP to connect to RELAY.ISI.EDU
+           which is an Internet host. (i.e., RELAY.ISI.EDU is the forwarding
+           host).
+
+     (11b) What is the name of your contact person at fowarding host?  The
+           Administrator of RELAY.ISI.EDU must agree to be the forwarding
+           host for yacht-club.com.gn, and the forwarding host must know a
+           delivery method and route to Yacht Club.  No double MXing.
+
+     (11c) What is the mailbox of your contact?
+           What is the mailbox of the administrator of the forwarding
+           host.
+
+12. What domain name system (dns) resource records (rr) and values are
+    to be entered for your non-IP host.  E.g.
+
+    myname.or.gn      MX   10 mail.com.gn.
+                      MX  100 backup.mail.com.gn.
+
+
+PLEASE ALLOW AT LEAST TEN WORKING DAYS FOR PROCESSING THIS APPLICATION.
+Remember, this is a volunteer service and the registrars and nameserver
+engineers have real lives too.
+
+- - - - - - - - - - - - - -   c u t   h e r e   - - - - - - - - - - - - - -
