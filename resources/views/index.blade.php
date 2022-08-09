@@ -46,10 +46,14 @@
                                     </div>
 
                                     <h2 class="text-center mb-3">{{ __("Enregistrement de domaine en Guinée (GN)") }}</h2>
-                                    <p class="text-center">
-                                        {{ __("Le formulaire est également disponible en") }}
+                                    <p class="text-center font-18 text-bold">
+                                        @if (config('app.locale') == 'en')
+                                            Le formulaire est également disponible en
+                                        @else
+                                            The form is also available in
+                                        @endif
                                         <a href="/form/{{ config('app.locale') == 'fr' ? 'en':'fr' }}">
-                                            {{ config('app.locale') == 'fr' ? "Anglais":"French" }}
+                                            {{ config('app.locale') == 'fr' ? "English":"Français" }}
                                         </a>
                                     </p>
 
@@ -147,7 +151,7 @@
                                                 <label  class="form-label">
                                                     4. {{ __("DESCRIPTION DU DOMAINE") }}*:
                                                 </label>
-                                                <textarea name="description" class="form-control" cols="30" rows="5"></textarea>
+                                                <textarea name="DESCRIPTION_OF_ORG_DOMAIN" class="form-control" value="{{ old("DESCRIPTION_OF_ORG_DOMAIN") }}" cols="30" rows="5"></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -156,7 +160,7 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label  class="form-label">
-                                                    5. {{ __("Date Operationnel") }}*:
+                                                    5. {{ __("Date Operationnel") }}:
                                                 </label>
                                                 <input type="date" id="date" name="DATE_OPERATION" class="form-control" value="{{ old("DATE_OPERATION") }}">
                                             </div>
@@ -168,7 +172,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label  class="form-label">
-                                                    6a. {{ __("NIChandle (si connu)") }}*:
+                                                    6a. {{ __("NIChandle (si connu)") }}:
                                                 </label>
                                                 <input class="form-control" type="text" name="CONTACT_NIC_HANDLE" value="{{ old('CONTACT_NIC_HANDLE') }}">
                                             </div>
@@ -244,7 +248,15 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label  class="form-label">
-                                                    6h. {{ __("Email") }}*:
+                                                    6h. {{ __("Telephone") }}*:
+                                                </label>
+                                                <input class="form-control" type="text" name="CONTACT_PHONE" value="{{ old("CONTACT_PHONE") }}">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label  class="form-label">
+                                                    6i. {{ __("Email") }}*:
                                                 </label>
                                                 <input class="form-control" type="text" name="CONTACT_EMAIL" value="{{ old("CONTACT_EMAIL") }}">
                                             </div>
@@ -295,7 +307,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label  class="form-label">
-                                                    7d. {{ __("Adresse (rue)") }}*:
+                                                    7d. {{ __("Adresse (rue)") }}:
                                                 </label>
                                                 <input class="form-control" type="text" name="TECHNICAL_ADDRESS_LINE_2" value="{{ old("TECHNICAL_ADDRESS_LINE_2") }}">
                                             </div>
@@ -359,7 +371,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label  class="form-label">
-                                                    7k. {{ __("Fax") }}*:
+                                                    7k. {{ __("Fax") }}:
                                                 </label>
                                                 <input class="form-control" type="text" name="TECHNICAL_FAX_NUM" value="{{ old("TECHNICAL_FAX_NUM") }}">
                                             </div>
@@ -558,8 +570,12 @@
                                         <a target="_blank" href="https://www.rfc-editor.org/rfc/rfc1591.html">({{ __("Voir") }} RFC 1591).</a>
                                     </p>
 
-                                    <div class="text-center d-grid">
-                                        <button class="btn btn-success" type="submit"> {{ __("Soumettre") }} </button>
+                                    <div class="row">
+                                        <div class="col-md-12" align="right">
+                                            <button class="btn btn-success float-right" type="submit">
+                                                {{ __("Soumettre") }}
+                                            </button>
+                                        </div>
                                     </div>
 
                                 </div> <!-- end card-body -->

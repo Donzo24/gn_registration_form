@@ -18,7 +18,7 @@ to randy@psg.com.  See attached detailed instructions.
       3d.* Postal Code...........: __POSTAL_CODE
       3e.* Country...............: __COUNTRY_NAME
 
-      4. * DESCRIPTION OF ORG/DOMAIN:
+      4. * DESCRIPTION OF ORG/DOMAIN: __DESCRIPTION_OF_ORG_DOMAIN
 
       5.   Date Operational......: __DATE_OPERATION
 
