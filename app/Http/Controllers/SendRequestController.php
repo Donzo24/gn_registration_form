@@ -48,6 +48,6 @@ class SendRequestController extends Controller
 
         unlink($file);
 
-        return back()->with("info", "Successful");
+        return back()->with("info", trans("Opération effectuée avec succès"));
     }
 }

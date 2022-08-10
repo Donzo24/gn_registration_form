@@ -303,7 +303,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label  class="form-label">
-                                                    7d. {{ __("Adresse (rue)") }}*:
+                                                    7d. {{ __("Adresse (rue) 1") }}*:
                                                 </label>
                                                 <input class="form-control" type="text" name="TECHNICAL_ADDRESS_LINE_1" value="{{ old("TECHNICAL_ADDRESS_LINE_1") }}">
                                             </div>
@@ -314,7 +314,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label  class="form-label">
-                                                    7d. {{ __("Adresse (rue)") }}:
+                                                    7d. {{ __("Adresse (rue) 2") }}:
                                                 </label>
                                                 <input class="form-control" type="text" name="TECHNICAL_ADDRESS_LINE_2" value="{{ old("TECHNICAL_ADDRESS_LINE_2") }}">
                                             </div>
@@ -435,7 +435,7 @@
                                         10, 11, et 12)") }}.
                                         </p>
 
-                                    <h3 class="text-center">10. {{ ("RESOURCE RECORDS (RRs) POUR HOTES IP") }}}}</h3>
+                                    <h3 class="text-center">10. {{ ("RESOURCE RECORDS (RRs) POUR HOTES IP") }}</h3>
                                     <div class="row mb-2">
                                         <div class="col-md-6">
                                             <div class="form-group">

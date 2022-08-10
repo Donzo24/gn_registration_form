@@ -1,6 +1,5 @@
 {
     "Enregistrement de domaine en Guinée (GN)": "Domain registration in Guinea (GN)",
-    "Le formulaire est également disponible en": "The form is also available in",
     "TYPE D'ENREGISTREMENT": "TYPE OF RECORD",
     "Nouveau": "New",
     "Modifier": "Edit",
@@ -19,10 +18,11 @@
     "NIChandle (si connu)": "NIChandle (if known)",
     "Nom complet": "Full Name",
     "Nom de l'Organisation)": "Name of the organization)",
-    "Adresse (rue)": "Street address)",
+    "Adresse rue 1": "Address street 1",
+    "Adresse rue 2": "Address street 2",
+    "Telephone": "Telephone",
     "Email": "E-mail",
     "CONTACT TECHNIQUE": "TECHNICAL CONTACT",
-    "Telephone": "Telephone",
     "Email enregistrement": "Email registration",
     "Fax": "Fax",
     "REPONDEZ AUX QUESTIONS 8 ET 9 SEULEMENT POUR UNE DELEGATION (i.e\n                                        organisation gérant une serveur de nom pour une branche de l'espace\n                                        d'adressage du Domaine GN)": "ANSWER QUESTIONS 8 AND 9 ONLY FOR ONE DELEGATION (i.e\n                                        organization managing a name server for a branch of the space\n                                        address of the GN Domain)",
@@ -50,5 +50,6 @@
     "La partie demandant l'enregistrement de ce nom certifie qu'à sa\n                                        connaissance l'utilisation de ce nom ne viole pas les noms de marques\n                                        déposées ou autre statut.": "The party requesting the registration of this name certifies that at its\n                                        knowledge the use of this name does not infringe the trade names\n                                        filed or other status.",
     "Enregistrer un nom de domaine ne confère aucun droit légal sur ce nom\n                                        et tout conflit sur le droit d'utiliser un nom particulier doit être\n                                        réglé entre les parties en conflit suivant les voies légales\n                                        habituelles de règlement": "Registering a domain name does not confer any legal rights to that name.\n                                        and any dispute over the right to use a particular name must be\n                                        settled between the parties in conflict following the legal channels\n                                        standard payment",
     "Voir": "See",
-    "Soumettre": "Submit"
+    "Soumettre": "Submit",
+    "Opération effectuée avec succès": "Operation completed successfully"
 }
