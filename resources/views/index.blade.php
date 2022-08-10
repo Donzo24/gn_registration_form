@@ -42,13 +42,13 @@
 
                                     <div class="text-center mb-4">
                                         <div class="auth-logo">
-                                            <a href="index.html" class="logo logo-dark text-center">
+                                            <a href="#" class="logo logo-dark text-center">
                                                 <span class="logo-lg">
                                                     <img src="{{ asset("assets/images/gn.png") }}" alt="" height="100">
                                                 </span>
                                             </a>
 
-                                            <a href="index.html" class="logo logo-light text-center">
+                                            <a href="#" class="logo logo-light text-center">
                                                 <span class="logo-lg">
                                                     <img src="{{ asset("assets/images/gn.png") }}" alt="" height="100">
                                                 </span>
