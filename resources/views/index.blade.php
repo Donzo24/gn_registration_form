@@ -15,6 +15,13 @@
 		<!-- icons -->
 		<link href="{{ asset("assets/css/icons.min.css") }}" rel="stylesheet" type="text/css" />
 
+        <style>
+            .form-group {
+                margin-bottom: 5px;
+                padding-bottom: 5px;
+            }
+        </style>
+
     </head>
 
     <body class="loading authentication-bg authentication-bg-pattern">
@@ -199,7 +206,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label  class="form-label">
-                                                    6d. {{ __("Adresse (rue)") }}*:
+                                                    6d. {{ __("Adresse rue 1") }}*:
                                                 </label>
                                                 <input class="form-control" type="text" name="CONTACT_ADDRESS_LINE_1" value="{{ old("CONTACT_ADDRESS_LINE_1") }}">
                                             </div>
@@ -210,7 +217,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label  class="form-label">
-                                                    6d. {{ __("Adresse (rue)") }}:
+                                                    6d. {{ __("Adresse rue 2") }}:
                                                 </label>
                                                 <input class="form-control" type="text" name="CONTACT_ADDRESS_LINE_2" value="{{ old("CONTACT_ADDRESS_LINE_2") }}">
                                             </div>
@@ -288,7 +295,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label  class="form-label">
-                                                    7c. {{ __("Nom de l'Organisation)") }}*:
+                                                    7c. {{ __("Nom de l'Organisation") }}*:
                                                 </label>
                                                 <input class="form-control" type="text" name="TECHNICAL_ORGANIZATION_NAME" value="{{ old("TECHNICAL_ORGANIZATION_NAME") }}">
                                             </div>
@@ -349,6 +356,8 @@
                                                 </label>
                                                 <input class="form-control" type="text" name="TECHNICAL_PHONE" value="{{ old("TECHNICAL_PHONE") }}">
                                             </div>
+                                        </div>
+                                        <div class="col-md-6">
                                             <div class="form-group">
                                                 <label  class="form-label">
                                                     7i. {{ __("Email") }}*:
@@ -356,7 +365,6 @@
                                                 <input class="form-control" type="text" name="TECHNICAL_EMAIL" value="{{ old("TECHNICAL_EMAIL") }}">
                                             </div>
                                         </div>
-
                                     </div>
 
                                     <div class="row mb-2">
