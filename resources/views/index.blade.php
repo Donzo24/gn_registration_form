@@ -509,12 +509,12 @@
                                         </div>
                                     </div>
 
-                                    <h3 class="text-center">11. {{ __("RESOURCE RECORDS (RRs) POUR HOTES NON-IP (UUCP)") }}</h3>
+                                    <h3 class="text-center">12. {{ __("RESOURCE RECORDS (RRs) POUR HOTES NON-IP (UUCP)") }}</h3>
                                     <div class="row mb-2">
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label  class="form-label">
-                                                    11a. {{ __("NOM DE DOMAINE") }}:
+                                                    12a. {{ __("NOM DE DOMAINE") }}:
                                                 </label>
                                                 <input class="form-control" type="text" name="RESOURCE_RECORDS_DOMAINE_NAME" value="{{ old("RESOURCE_RECORDS_DOMAINE_NAME") }}">
                                             </div>
