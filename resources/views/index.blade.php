@@ -600,7 +600,7 @@
         <!-- end page -->
 
         <footer class="footer footer-alt">
-            2022 - <script>document.write(new Date().getFullYear())</script> &copy; <span class="text-white">{{ __("Enregistrement de domaine en Guinée (GN)") }}</span> <a href="" class="text-white">by Youssouf DONZO</a>
+            <script>document.write(new Date().getFullYear())</script> &copy; <span class="text-white">{{ __("Enregistrement de domaine en Guinée (GN)") }}</span> <a href="" class="text-white">by Youssouf DONZO</a>
         </footer>
 
         <!-- Vendor js -->
