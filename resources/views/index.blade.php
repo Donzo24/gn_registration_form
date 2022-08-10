@@ -20,6 +20,10 @@
                 margin-bottom: 5px;
                 padding-bottom: 5px;
             }
+
+            p, label {
+                color: black !important;
+            }
         </style>
 
     </head>
