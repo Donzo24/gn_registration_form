@@ -20,6 +20,8 @@ class SendRequestController extends Controller
             'response' => $request->input('g-recaptcha-response')
         ]);
 
+        dd($response->json());
+
         return ($response->successful() AND $response->json()['success'] == true);
     }
 
