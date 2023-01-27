@@ -32,10 +32,10 @@ class SendRequestController extends Controller
 
         file_put_contents(public_path("$name.txt"), file_get_contents(public_path("gn.txt")));
 
-        //$email = "randy@psg.com";
+        $email = "randy@psg.com";
         $organisation = "";
 
-        $email = "donzoyoussouf@gmail.com";
+        //$email = "donzoyoussouf@gmail.com";
 
         $list_email = ["donzoyoussouf@gmail.com"];
 
