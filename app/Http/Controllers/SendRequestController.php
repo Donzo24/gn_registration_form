@@ -15,7 +15,7 @@ class SendRequestController extends Controller
 
     public function verifySite(Request $request)
     {
-        $response = Http::post('https://www.google.com/recaptcha/api/siteverify', [
+        $response = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
             'secret' => '6Lf1NC8kAAAAANVs4_nF4euO-Q6-grXmp4K5Q4GT',
             'response' => $request->input('g-recaptcha-response')
         ]);
