@@ -45,13 +45,13 @@
                                         <div class="auth-logo">
                                             <a href="#" class="logo logo-dark text-center">
                                                 <span class="logo-lg">
-                                                    <img src="{{ asset("assets/images/gn.png") }}" alt="" height="100">
+                                                    <img src="{{ asset("assets/images/gn2.png") }}" alt="" height="100">
                                                 </span>
                                             </a>
 
                                             <a href="#" class="logo logo-light text-center">
                                                 <span class="logo-lg">
-                                                    <img src="{{ asset("assets/images/gn.png") }}" alt="" height="100">
+                                                    <img src="{{ asset("assets/images/gn2.png") }}" alt="" height="100">
                                                 </span>
                                             </a>
                                         </div>
