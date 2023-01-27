@@ -8,19 +8,34 @@ use Illuminate\Support\Str;
 use Response;
 use App\Mail\SendForm;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Http;
 
 class SendRequestController extends Controller
 {
-    public function save(Request $request)
+
+    public function verifySite(Request $request)
     {
+        $response = Http::post('https://www.google.com/recaptcha/api/siteverify', [
+            'secret' => '6Lf1NC8kAAAAANVs4_nF4euO-Q6-grXmp4K5Q4GT',
+            'response' => $request->input('g-recaptcha-response')
+        ]);
+
+        return ($response->successful() AND $response->json()['success'] == true);
+    }
+
+    public function save(SendRequest $request)
+    {
+
+        if(verifySite($request)) return back()->with("msg", "Merci de valider le reCAPTCHA")->withInput();
 
         $name = (string) Str::uuid();
 
         file_put_contents(public_path("$name.txt"), file_get_contents(public_path("gn.txt")));
 
-        // $email = "donzoyoussouf@gmail.com";
-        $email = "randy@psg.com";
+        //$email = "randy@psg.com";
         $organisation = "";
+
+        $email = "donzoyoussouf@gmail.com";
 
         $list_email = ["donzoyoussouf@gmail.com"];
 
@@ -49,6 +64,6 @@ class SendRequestController extends Controller
 
         unlink($file);
 
-        return back()->with("info", trans("Opération effectuée avec succès"));
+        return back()->with("info", trans("Opération effectuée avec succès, une copie du fichier a été envoyée à votre adresse e-mail."));
     }
 }

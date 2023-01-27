@@ -34,7 +34,7 @@ class SendForm extends Mailable
     {
         return $this->markdown('emails.form')
         // ->subject("Request from {$this->organisation}")
-        ->subject("Sample Guinea Domain Registration request")
+        ->subject("Guinea Domain Registration request")
         ->attach($this->file, [
             'as' => 'gn.txt',
             'mime' => 'text/plain',

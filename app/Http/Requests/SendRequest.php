@@ -69,6 +69,7 @@ class SendRequest extends FormRequest
             // "RESOURCE_RECORDS_HARDWARE" => "required",
             // "RESOURCE_RECORDS_OS" => "required",
             // "RESOURCE_RECORDS_MX" => "required",
+            "g-recaptcha-response" => 'required',
         ];
     }
 }

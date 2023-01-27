@@ -14,6 +14,7 @@
 		<link href="{{ asset("assets/css/config/default/app.min.css") }}" rel="stylesheet" type="text/css" id="app-style"/>
 		<!-- icons -->
 		<link href="{{ asset("assets/css/icons.min.css") }}" rel="stylesheet" type="text/css" />
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
         <style>
             .form-group {
@@ -582,6 +583,8 @@
                                         <a target="_blank" href="https://www.rfc-editor.org/rfc/rfc1591.html">({{ __("Voir") }} RFC 1591).</a>
                                     </p>
 
+                                    <div class="g-recaptcha" data-sitekey="6Lf1NC8kAAAAAKTCXkkAI3jwi_9Ybkb8jYyfQp9J"></div>
+
                                     <div class="row">
                                         <div class="col-md-12" align="right">
                                             <button class="btn btn-success float-right" type="submit">
@@ -612,6 +615,12 @@
 
         <!-- App js -->
         <script src="{{ asset("assets/js/app.min.js") }}"></script>
+
+        <script>
+            function onSubmit(token) {
+              document.getElementById("demo-form").submit();
+            }
+          </script>
 
     </body>
 </html>
