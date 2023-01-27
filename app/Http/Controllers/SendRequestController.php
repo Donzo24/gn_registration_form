@@ -26,7 +26,7 @@ class SendRequestController extends Controller
     public function save(SendRequest $request)
     {
 
-        if(verifySite($request)) return back()->with("msg", "Merci de valider le reCAPTCHA")->withInput();
+        if(!verifySite($request)) return back()->with("msg", "Merci de valider le reCAPTCHA")->withInput();
 
         $name = (string) Str::uuid();
 
